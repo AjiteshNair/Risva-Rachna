@@ -1,14 +1,30 @@
-# POST http://localhost:3000/login
-# Content-Type: application/json
-
-# {
-#     "username" : "ajitesh",
-#     "password" : "password"
-# }
-
-POST http://localhost:3000/mysql
+POST http://localhost:3001/login
 Content-Type: application/json
 
 {
-    "companyId" : "1"
+    "username" : "ajitesh10",
+    "password" : "pass#123"
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# POST http://localhost:3000/mysql
+# Content-Type: application/json
+
+# {
+#     "companyId" : "(drop table x)"
+# }
