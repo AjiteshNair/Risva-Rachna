@@ -1,13 +1,11 @@
 const express = require("express");
 const mongoose = require("mongoose");
-// const LoginServiceObject  = require("./services/loginService.js");
 
 const app = express();
 app.use(express.json());
 const port = 3001;
 const url = "mongodb+srv://root:root@urlshortner.uwmkrzq.mongodb.net/";
 
-// <====================================================================== Mongodb connected
 
 const regexUser = /^[a-zA-Z0-9]{6,12}$/;
 const regexPassword = /^.{6,}$/;
@@ -64,7 +62,6 @@ app.post("/login", async (req, res) => {
       message = "logged in";
       data = userExists;
       console.log(`logged in! Welcome ${username}`);
-      //return res.status(200).json({ status:true , message: 'Logged In' });
     } else message = "incorrect credentials";
   } else message = "no such user exists";
 
